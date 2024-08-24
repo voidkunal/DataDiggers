@@ -1,7 +1,7 @@
 /******************************************** toggle in header ********************************************/
 
-let icon = document.querySelector(".icon1");
-let ul = document.querySelector("navbar a");
+let icon = document.querySelector(".ticon");
+let ul = document.querySelector("header");
 icon.addEventListener("click", () => {
     navbar .classList.toggle("showData");
     if (navbar .classList.contains("showData")) {
