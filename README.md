@@ -1,2 +1,2 @@
 # DataDiggers
-Mining Project
+Health Project
