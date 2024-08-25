@@ -40,17 +40,12 @@ html, body {
     border: 1px solid whitesmoke;
 }
 /** Box 2**/
-.add-first {
-    color : yellowgreen;
-    font-size:0.60rem;
-    display :flex;
-    margin-left: 15px;
-}
 
-.add-second {
+.nav-address a{
     color: yellowgreen;
-    font-size : 0.60rem;
-    margin-left: 5px;
+    font-size: 0.60rem;
+    display: flex;
+    margin-left: 15px;
 }
 
 .add-icon {
@@ -63,7 +58,7 @@ html, body {
 .nav-search {
  display: flex;
   justify-content: space-evenly;
-    background-color: yellowgreen;
+    background-color: none;
     width: 620px;
     height: 30px;
     border-radius: 4px;
@@ -71,7 +66,7 @@ html, body {
 }
 
 .search-select {
-    display: flex;
+    display: none;
     background-color: #f3f3f3;
     width: 50px;
     text-align: center;
@@ -81,7 +76,7 @@ html, body {
 }
 
 .search-input {
-    display: flex;
+    display: none;
     width: 100%;
     font-size: 0.80rem;
     border: none;
@@ -90,7 +85,7 @@ html, body {
 
 .search-icon {
     width: 45px;
-    display: flex;
+    display: none;
     justify-content: center;
     margin-top: 2px;
     align-items :center;
@@ -102,6 +97,7 @@ html, body {
 }
 
 .nav-search:hover {
+    display: none;
     border: 2px solid #febd68;
 }
 /** Box 4 **/
@@ -200,7 +196,11 @@ Span {
 
 /** toggle icon **/
 
-.ticon{
+.t-icon{
+    display: none;
+}
+
+.nav-toggle{
     display: none;
 }
 
@@ -441,7 +441,7 @@ ul a {
         font-size: auto;
         overflow: hidden;
     }
-    .ticon{
+    .t-icon{
         display: none;
     }
     
@@ -459,7 +459,7 @@ ul a {
         display: flex;
     }
 
-    .ticon{
+    .t-icon{
         display: flex;
         margin-left: 70vw;
         font-size: large;
@@ -517,6 +517,22 @@ ul a {
     .box {
         flex: 1 1 100%;
         max-width: 100%;
+    }
+
+      
+    .showData{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        top: 35px;
+        box-shadow: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        padding: 0px;
+        gap: 25px;
     }
 
     .foot-panel2 ul {
