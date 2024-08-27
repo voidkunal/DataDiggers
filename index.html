@@ -18,75 +18,91 @@
 
 <body>
   <header>
+    
+    <div class="nav-actions">
+      <div class="nav-location">
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <select class="location-select">
+          <!-- location options -->
+        </select>
+      </div>
+      <div class="language-select">
+        <div class="lang-icon">
+          <i class="fa-solid fa-language"></i>
+        </div>
+        <select class="lang-select">
+          <option>English</option>
+          <option>Hindi</option>
+          <option>Spanish</option>
+          <!-- add more language options here -->
+        </select>
+      </div>
+      <div class="button-container">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+      </div>
+    </div>
+    
     <div class="navbar">
       <div class="nav-toggle">
-        <ul class="nav-items">
-          <li><img src="PCH.png" alt="Logo" class="logo-img"></li>
-          <li><a href="#nav-Health" class="nav-link">Health & Wellness</a></li>
-          <li><a href="#help" class="nav-link">Help</a></li>
-          <li><a href="#cust-port" class="nav-link">Customer Portal</a></li>
-          <!-- <li><a href="#language" class="nav-link">Language</a></li> -->
-          <li><a href="#contact" class="nav-link">Contact us </a></li>
-          <li><button class="login-button"><a href="#nav-signin" class="nav-link active">Account</a></button></li>
+        <img src="PCH.png" alt="img" class="logo">
       </div>
-      </ul>
-
+      <nav>
+        <ul>
+          
+          <li><a href="#nav-Health" class="active">Health & Wellness</a></li>
+          <li><a href="#nav-Book-border" class="active">Contact Us</a></li>
+          <li><a href="#help" class="active">Help</a></li>
+         
+        
+          
+        </ul>
+      </nav>
       <div class="nav-location">
-        <div class="add-icon border">
+        <div class="add-icon">
           <i class="fa-solid fa-location-dot"></i>
-          <select>
-            <option value="" disabled selected>Select location</option> <!-- Placeholder option -->
-            <option value="AP">Andhra Pradesh</option>
-            <option value="AR">Arunachal Pradesh</option>
-            <option value="AS">Assam</option>
-            <option value="BR">Bihar</option>
-            <option value="CT">Chhattisgarh</option>
-            <option value="GA">Goa</option>
-            <option value="HR">Haryana</option>
-            <option value="HP">Himachal Pradesh</option>
-            <option value="JK">Jammu and Kashmir</option>
-            <option value="JH">Jharkhand</option>
-            <option value="KA">Karnataka</option>
-            <option value="KL">Kerala</option>
-            <option value="MP">Madhya Pradesh</option>
-            <option value="MH">Maharashtra</option>
-            <option value="MN">Manipur</option>
-            <option value="ML">Meghalaya</option>
-            <option value="MZ">Mizoram</option>
-            <option value="NL">Nagaland</option>
-            <option value="OR">Odisha</option>
-            <option value="PB">Punjab</option>
-            <option value="RJ">Rajasthan</option>
-            <option value="SK">Sikkim</option>
-            <option value="TN">Tamil Nadu</option>
-            <option value="TG">Telangana</option>
-            <option value="TR">Tripura</option>
-            <option value="UT">Uttarakhand</option>
-            <option value="UP">Uttar Pradesh</option>
-            <option value="WB">West Bengal</option>
-            <option value="AN">Andaman and Nicobar Islands</option>
-            <option value="CH">Chandigarh</option>
-            <option value="DN">Dadra and Nagar Haveli</option>
-            <option value="DD">Daman and Diu</option>
-            <option value="DL">Delhi</option>
-            <option value="LD">Lakshadweep</option>
-            <option value="PY">Puducherry</option>
-          </select>
         </div>
+        <select class="location-select">
+          <option>Select Location</option>
+          <option>Andhra Pradesh</option>
+          <option>Arunachal Pradesh</option>
+          <option>Assam</option>
+          <option>Bihar</option>
+          <option>Chhattisgarh</option>
+          <option>Goa</option>
+          <option>Gujarat</option>
+          <option>Haryana</option>
+          <option>Himachal Pradesh</option>
+          <option>Jammu and Kashmir</option>
+          <option>Jharkhand</option>
+          <option>Karnataka</option>
+          <option>Kerala</option>
+          <option>Madhya Pradesh</option>
+          <option>Maharashtra</option>
+          <option>Manipur</option>
+          <option>Meghalaya</option>
+          <option>Mizoram</option>
+          <option>Nagaland</option>
+          <option>Odisha</option>
+          <option>Punjab</option>
+          <option>Rajasthan</option>
+          <option>Sikkim</option>
+          <option>Tamil Nadu</option>
+          <option>Telangana</option>
+          <option>Tripura</option>
+          <option>Uttarakhand</option>
+          <option>Uttar Pradesh</option>
+          <option>West Bengal</option>
+        </select>
       </div>
-
-
-
+        
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+      </div>
     </div>
-
-
-
-    </div>
-
-
-
-
-  </header>
+  </header>
 
   <main>
     <div class="hero">
