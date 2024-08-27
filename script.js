@@ -7,15 +7,18 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
+      // console.log(entry.target)
+      
     } else {
       entry.target.classList.remove('show');
+      // console.log(entry.isIntersecting)
     }
   });
 }, {
-  threshold: 0.5, // Adjust this value to control when the animation triggers
+   threshold: 0.5, // Adjust this value to control when the animation triggers
 });
-const body = document.body;
-body.style.background = 'linear-gradient(to right,  #dd869f,#4c1d33)';
+// const body = document.body;    /1/
+// body.style.background = 'linear-gradient(to right,  #dd869f,#4c1d33)';
 
 
 // Observe each .box element
