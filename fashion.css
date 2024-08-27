@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{
-background-color: #fff;  
+body {
+  background-color: #fff;
   /* background: linear-gradient(to right, #4c1d33, #dd869f);
   background-color:lightgreen; */
 }
@@ -13,14 +13,16 @@ background-color: #fff;
 .navbar {
   right: 0;
   box-sizing: border-box;
-  width:100vw;
+  width: 100vw;
 
   position: absolute;
-  background-color: #eed9df; /* Background color should be visible now */
+  background-color: #eed9df;
+  /* Background color should be visible now */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px; /* Increased padding to create more height */
+  padding: 20px 20px;
+  /* Increased padding to create more height */
   top: 0;
   left: 0;
   overflow: hidden;
@@ -29,16 +31,19 @@ background-color: #fff;
   height: 66px;
   border-radius: 15px;
 }
-.nav-items{
+
+.nav-items {
   align-items: center;
-display: flex;
-justify-content: space-between;
-gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
+
 main {
-  margin-top: 120px; 
+  margin-top: 120px;
   padding: 20px;
 }
+
 .arrow {
 
   position: absolute;
@@ -46,7 +51,7 @@ main {
   color: #fff;
   padding: 9px;
   font-size: 30px;
-  
+
   top: 60%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -71,8 +76,6 @@ main {
   /* width: 1px; later */
 
 */
-
-
 /* .navbar .nav-toggle {
   display: flex;
   align-items: center;
@@ -84,7 +87,7 @@ main {
 
 .navbar .nav-toggle {
   padding: 2px 5px;
-  
+
 }
 
 ul {
@@ -93,10 +96,10 @@ ul {
 
 
 .navbar.shrink {
-  padding: 50px; 
+  padding: 50px;
 
   transition: padding 0.3s ease, height 1s ease;
-  height: auto; 
+  height: auto;
 }
 
 
@@ -116,14 +119,14 @@ ul {
   background-position: center;
   /* margin: -40px 2px; */
   overflow: hidden;
-  transition: background-image 0.5s ease-in-out; 
+  transition: background-image 0.5s ease-in-out;
   /* position: relative; */
-  
+
 }
 
 /* ............................. visit section */
 .visit {
- 
+
   padding: 15px;
   margin: 34px;
   display: flex;
@@ -133,8 +136,8 @@ ul {
 }
 
 .box {
-  background-color: #f1f1f1;  
-  color: #1f5c9e;   
+  background-color: #f1f1f1;
+  color: #1f5c9e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,17 +146,20 @@ ul {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  opacity: 0; /* Start hidden */
-  transform: translateY(100px); /* Start slightly below */
+  opacity: 0;
+  transform: translateY(100px);
+  /* Start slightly below */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  padding: 40px;  
-  
+  padding: 40px;
+
 }
-.box:hover {       
-cursor: pointer;
-background-color: #1f5c9e;
-color: #fff;
+
+.box:hover {
+  cursor: pointer;
+  background-color: #1f5c9e;
+  color: #fff;
 }
+
 img {
   border-radius: 4px;
   padding: 5px;
@@ -162,35 +168,71 @@ img {
   border: none;
   margin-right: 1rem;
 }
+
+.box>button {
+
+  margin: 42px -1px;
+
+}
+
 .login-button {
-  background-color: #ffff; /* Green background */
-  color: white; /* White text */
-  
-  text-align: center; 
+  background-color: #ffff;
+  /* Green background */
+  color: white;
+  /* White text */
+
+  text-align: center;
   padding: 8px 8px;
-  font-size: 16px; /* Increase font size */
-  border-radius: 20px ;
-  
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth transition */
-} */
+  font-size: 16px;
+  /* Increase font size */
+  border-radius: 20px;
+
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+.visit h4{
+  background-color: #a1db34;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+.visit h4:hover {
+  background-color: #a85277;
+  transform: translateY(-5px);
+}
+.visit h4:active {
+  transform: translateY(2px);
+} 
+
+
 
 .login-button:hover {
-  background-color:liht; /* Darker green on hover */
-} 
+  background-color: liht;
+  /* Darker green on hover */
+}
+
 .nav-link {
-  text-decoration: none; /* Remove underline from links */
-  color: ffff; /* Inherit color from parent element */
+  text-decoration: none;
+  /* Remove underline from links */
+  color: ffff;
+  /* Inherit color from parent element */
 }
 
 .box.show {
   opacity: 1;
-  transform: translateY(0); /* Slide up to normal position */
+  transform: translateY(0);
+  /* Slide up to normal position */
 }
 
 .box h2 {
   font-size: 35px;
-  
+
 }
 
 /* footer part */
@@ -240,17 +282,21 @@ img {
 
 /* General footer styling */
 footer {
-  background-color: #f1f1f1;  /* Light background color for contrast */
-  color: #333;  /* Darker text color for readability */
+  background-color: #f1f1f1;
+  /* Light background color for contrast */
+  color: #333;
+  /* Darker text color for readability */
   padding: 40px 0;
-  font-family: Arial, sans-serif;  /* Ensuring a clean, modern font */
+  font-family: Arial, sans-serif;
+  /* Ensuring a clean, modern font */
 }
 
 /* Contact section styles */
 .contact h2 {
   margin-bottom: 2rem;
   text-align: center;
-  color: #1f5c9e;  /* Use theme color for headings */
+  color: #1f5c9e;
+  /* Use theme color for headings */
   font-size: 2rem;
 }
 
@@ -279,7 +325,8 @@ footer {
 }
 
 .contact form textarea {
-  width: 100%;  /* Textarea should span the full width */
+  width: 100%;
+  /* Textarea should span the full width */
   resize: none;
   height: 150px;
 }
@@ -296,7 +343,8 @@ footer {
 }
 
 .contact form .btn:hover {
-  background-color: #163d6d;  /* Darker shade for hover effect */
+  background-color: #163d6d;
+  /* Darker shade for hover effect */
 }
 
 /* Footer bottom section with copyright */
@@ -339,4 +387,8 @@ footer {
 .footer-iconTop a i {
   font-size: 1.5rem;
   color: #fff;
+}
+
+.box button {
+  background-color: #6c757d;
 }
