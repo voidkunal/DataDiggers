@@ -1,52 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+margin: 0;
+padding: 0;
+
+box-sizing: border-box;
+
+text-decoration: none;
+
+border: none;
+
+outline: none;
+
+scroll-behavior: smooth;
+
+font-family: 'Nunito', sans-serif;
+
 }
 
+:root {
+
+    --bg-color: #1995AD; 
+    --snd-bg-color:  #A1D6E2; 
+    --text-color: #002C54; 
+    --main-color:  #F1F1F2;
+}
+
+html {
+    
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 
 body {
-  background-color: #5236ac;
+
+    background: var(--bg-color); color: var(--text-color);
+    
 }
+/* 
+section {
 
+    min-height: 100vh;
+    
+    padding: 10rem 9% 2rem;
 
-
+} */
 
 .navbar {
-color: #fff;
-padding: 1em;
+color:var(--text-color);
 display: flex;
 justify-content: space-between;
 align-items: center;
-right: 0;
 box-sizing: border-box;
 height: 66px;
 width: 100vw;
-background-color: #2e2b33;
-/* Background color should be visible now */
-padding: 20px 20px;
-/* Increased padding to create more height */
-top: 0;
-left: 0;
+background-color: rgba(0, 0, 0, 0.3);
 overflow: hidden;
 transition: all 0.3s ease-in-out;
-z-index: 3;
-border-radius: 14px;
+border-radius: 25px;
+margin-top: 10px;
 }
 
+
+.logo {
+width: 50px;
+height: 50px;
+margin-right: 2.5em;
+border-radius: 50%;
+}
 
 .list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10rem;
-}
-
-.logo {
-width: 50px;
-height: 50px;
-margin-right: 1em;
-border-radius: 50%;
+  padding-right: 10rem;
 }
 
 nav ul {
@@ -63,13 +91,13 @@ font-size: 18px;
 }
 
 nav a {
-color: #fff;
+color: var(--main-color);
 text-decoration: none;
 transition: color 0.2s ease;
 }
 
 nav a:hover {
-color: #ccc;
+color: var(--snd-bg-color);
 }
 
 .nav-actions {
@@ -83,7 +111,11 @@ align-items: center;
   display: flex;
 }
 
-.login-signup-btn {
+#logout-icon{
+  display: none;
+}
+
+.logout-btn {
   margin-right: 0.5em;
   padding: 0.5em 1em;
   font-size: 16px;
@@ -91,7 +123,6 @@ align-items: center;
   border-radius: 20px;
   border: none;
   transition: background-color 0.2s ease;
-  background-color: #f1c40f;
   color: #fff;
   display: flex;
   align-items: center;
@@ -101,21 +132,13 @@ align-items: center;
   margin-right: 0.5em;
 } 
 
-#login {
+#logout {
   background-color: rgb(92, 8, 125);
   margin-right: 2rem;
 }
 
-#login:hover {
+#logout:hover {
   background-color: rgb(175, 63, 175);
-}
-
-#signup {
-background-color: orangered;
-}
-
-#signup:hover {
-  background-color: rgb(215, 98, 55);
 }
 
 
@@ -164,20 +187,6 @@ main {
   right: calc(15vw - 65px);
   border: none;
 }
-
-/* @media (max-width:px) {
-.header {
-  /* width: 1px; later */
-
-*/
-/* .navbar .nav-toggle {
-  display: flex;
-  align-items: center;
-  gap: 78px; 
-  padding: 20px 0;
-  transition: all 0.3s ease-in-out;
-} */
-
 
 .navbar .nav-toggle {
   padding: 2px 5px;
@@ -240,7 +249,7 @@ ul {
 
 }
 
-/* ............................. visit section */
+/* ............................. visit section ...............................*/
 
 
 .visit {

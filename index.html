@@ -21,83 +21,28 @@
    
     </div>
     <div class="navbar">
-      <div class="nav-toggle">
-        <img src="PCH.png" alt="img" class="logo">
-      </div>
+      <img src="PCH.png" alt="img" class="logo">
+
       <nav class="list">
         <ul>
           <li><a href="#nav-home" class="active">home</a></li>
           <li><a href="#nav-Health" class="active">health/wellness</a></li>
           <li><a href="#nav-Book-border" class="active">about Us</a></li>
           
-          <li><a href="#nav-contact" class="active">contact</a></li>
+          <li><a href="#contact" class="active">contact</a></li>
           <li><a href="#help" class="active">help</a></li>
         </ul>
         <div class="button-container">
-          <button class="login-signup-btn" id="login">
-            <i class="fa-solid fa-user"></i>
-            Login
-          </button>
-          <button class="login-signup-btn" id="signup">
-            <i class="fa-solid fa-user"></i>
-            Sign Up
+          <button class="logout-btn" id="logout">
+            <i class="fa-solid fa-user" id="logout-icon"></i>
+            Log
+              Out
           </button>
       </nav>
     </div>
      
       
   </header>
-      <!-- <div class="nav-location">
-        <div class="add-icon">
-          <i class="fa-solid fa-location-dot"></i>
-        </div>
-        <select class="location-select">
-          <option>Select Location</option>
-          <option>Andhra Pradesh</option>
-          <option>Arunachal Pradesh</option>
-          <option>Assam</option>
-          <option>Bihar</option>
-          <option>Chhattisgarh</option>
-          <option>Goa</option>
-          <option>Gujarat</option>
-          <option>Haryana</option>
-          <option>Himachal Pradesh</option>
-          <option>Jammu and Kashmir</option>
-          <option>Jharkhand</option>
-          <option>Karnataka</option>
-          <option>Kerala</option>
-          <option>Madhya Pradesh</option>
-          <option>Maharashtra</option>
-          <option>Manipur</option>
-          <option>Meghalaya</option>
-          <option>Mizoram</option>
-          <option>Nagaland</option>
-          <option>Odisha</option>
-          <option>Punjab</option>
-          <option>Rajasthan</option>
-          <option>Sikkim</option>
-          <option>Tamil Nadu</option>
-          <option>Telangana</option>
-          <option>Tripura</option>
-          <option>Uttarakhand</option>
-          <option>Uttar Pradesh</option>
-          <option>West Bengal</option>
-        </select>
-      </div> -->
-      <!-- <div class="language-select">
-        <div class="lang-icon">
-          <i class="fa-solid fa-language"></i>
-        </div>
-        <select class="lang-select">
-          <option>English</option>
-          <option>Hindi</option>
-          <option>Spanish</option>
-          
-        </select>
-      </div> -->
-      
-
-
   <main>
     <div class="hero">
       <div class="slide active" style="
@@ -161,43 +106,6 @@
            </button>
           </div>
       </div>
-     
-        <!-- <div class="box-location">
-          <div class="add-icon">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <select class="location-select">
-            <option>Select Location</option>
-            <option>Andhra Pradesh</option>
-            <option>Arunachal Pradesh</option>
-            <option>Assam</option>
-            <option>Bihar</option>
-            <option>Chhattisgarh</option>
-            <option>Goa</option>
-            <option>Gujarat</option>
-            <option>Haryana</option>
-            <option>Himachal Pradesh</option>
-            <option>Jammu and Kashmir</option>
-            <option>Jharkhand</option>
-            <option>Karnataka</option>
-            <option>Kerala</option>
-            <option>Madhya Pradesh</option>
-            <option>Maharashtra</option>
-            <option>Manipur</option>
-            <option>Meghalaya</option>
-            <option>Mizoram</option>
-            <option>Nagaland</option>
-            <option>Odisha</option>
-            <option>Punjab</option>
-            <option>Rajasthan</option>
-            <option>Sikkim</option>
-            <option>Tamil Nadu</option>
-            <option>Telangana</option>
-            <option>Tripura</option>
-            <option>Uttarakhand</option>
-            <option>Uttar Pradesh</option>
-            <option>West Bengal</option>
-          </select> --> 
         
       <div class="marge">
         <img src="medi.jpg" alt="medi"> <!--add img-->
@@ -208,6 +116,7 @@
           </button>
         </div>
       </div>
+
    <div class="marge">
     <img src="medi.jpg" alt="medi"> <!--add img-->
     <div class="box">       
@@ -233,31 +142,27 @@
 
   </main>
 
+   <!-- CONTACT SECTION DESIGN -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>us</span></h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" class="contact-inputs" required>
+        <input type="email" placeholder="Email Address" class="contact-inputs" required>
+      </div>
+      <div class="input-box">
+        <input type="tel" placeholder="Mobile Number" class="contact-inputs" required>
+        <input type="text" placeholder="Email Subject" class="contact-inputs" required>
+      </div>
+      <input type="hidden" name="access_key" value="ece7605d-da3c-4c81-83b0-218711cce0df">
+      <textarea name="Message" cols="30" rows="10" placeholder="Your Message" class="contact-inputs"
+        required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
 
-  <div class="cont-foot">
     <!-- Footer -->
     <footer>
-      <!-- CONTACT SECTION DESIGN -->
-
-      <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>us</span></h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <div class="input-box">
-            <input type="text" placeholder="Full Name" class="contact-inputs" required>
-            <input type="email" placeholder="Email Address" class="contact-inputs" required>
-          </div>
-          <div class="input-box">
-            <input type="tel" placeholder="Mobile Number" class="contact-inputs" required>
-            <input type="text" placeholder="Email Subject" class="contact-inputs" required>
-          </div>
-          <input type="hidden" name="access_key" value="ece7605d-da3c-4c81-83b0-218711cce0df">
-          <textarea name="Message" cols="30" rows="10" placeholder="Your Message" class="contact-inputs"
-            required></textarea>
-          <input type="submit" value="Send Message" class="btn">
-        </form>
-      </section>
-
-      <!-- last copy -->
       <div class="foot-panel4">
         <div class="copyright">
           <p class="border">Copyright &copy; 2024 by @Bio-Bridge | All Rights Reserved.</p>
@@ -265,8 +170,6 @@
       </div>
     </footer>
 
-    <!-- Footer -->
-  </div>
   <!-- End of .container -->>
   <script src="script.js"></script>
 

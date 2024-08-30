@@ -1,3 +1,20 @@
+/**
+ Show Data Toggle funtion
+ */
+
+//  let icon = document.querySelector(".icon1");
+// let ul = document.querySelector("navbar a");
+// icon.addEventListener("click", () => {
+//     navbar .classList.toggle("showData");
+//     if (navbar .classList.contains("showData")) {
+//         document.getElementById("bar").className = "fa-solid fa-xmark";
+//     } else {
+//         document.getElementById("bar").className = "fa-solid fa-bars";
+//     }
+// });
+
+
+
 // Select the .hero element and other required elements
 const hero = document.querySelector('.hero');
 const boxes = document.querySelectorAll('.box');
