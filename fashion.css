@@ -61,6 +61,10 @@ margin-right: 2.5em;
 border-radius: 50%;
 }
 
+.icon2{
+  display: none;
+}
+
 .list {
   display: flex;
   justify-content: space-between;
@@ -70,7 +74,8 @@ border-radius: 50%;
 
 nav ul {
 display: flex;  
-justify-content: center;
+justify-content: flex-end;
+align-items: center;
 list-style: none;
 margin-right: 15rem;
 }
@@ -81,9 +86,15 @@ font-size: 18px;
 
 }
 
+nav li:first-child{
+  margin-right: auto;
+}
 nav a {
 color: var(--main-color);
+display: flex;
+align-items: center;
 text-decoration: none;
+padding: 0 30px;
 transition: color 0.2s ease;
 }
 
@@ -96,14 +107,38 @@ display: flex;
 align-items: center;
 }
 
-
-
-.button-container {
-  display: flex;
+.slidebar{
+  position: fixed;
+  top: 0;
+  height: 0;
+  height: 100vh;
+  width: 200px;
+  margin-left: 72.8vw;
+  z-index: 999;
+  padding-top: 5vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-#logout-icon{
+.slidebar li{
+  width: 100%;
+  padding: 20px;
+}
+
+.slidebar a{
+  width: 100%;
+}
+
+.menu{
   display: none;
+}
+.button-container {
+  display: flex;
 }
 
 .logout-btn {
@@ -158,10 +193,13 @@ main {
 
 }
 
+/* li{
+  padding: 5vw;
+} */
+
 ul {
   list-style-type: none;
 }
-
 
 .navbar.shrink {
   padding: 50px;
@@ -194,7 +232,7 @@ ul {
   height: 120vh;
   overflow: hidden; 
   background: var(--snd-bg-color);
-  background-image: url(family.jpg);
+  background-image: url(family1.jpg);
   background-size: cover;
   background-position: center;
   position: flex;
@@ -203,30 +241,6 @@ ul {
   justify-content: center;
   margin-top: 5vh;
 }
-
-.hero h2 p {
-    font-size: xx-large;
-    position: absolute;
-    color: var(--main-color);
-    font-size: 3rem; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    text-align: center;
-    z-index: 1; 
-}
-
-p#p-1{
-margin-left: -40vw;
-margin-top: -48vh;
-}
-p#p-2{
-margin-left: -37vw;
-margin-top: -42vh;
-}
-p#p-3{
-  margin-left: -34vw;
-  margin-top: -36vh;
-}
-
 /* ............................. visit section ...............................*/
 
 
@@ -256,8 +270,8 @@ p#p-3{
 }
 
 .box h2 {
-  font-size: 1rem;
-margin-left: 2rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
 }
 
 .box:hover {
@@ -486,30 +500,14 @@ footer {
   font-size: 55%;
   
   }
-  .social-media a {
-      width : 7.5rem;
-       height : 6.5rem;
-       font-size: 4rem;
-        border : none;
-    }
+  .button-container{
+    display :flex;
+  }
    .contact form {
 
        margin-left :10vw;
        max-width : 100%;
    }
-
-
-    #video-pbox1 {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       width : 50%;
-   }
-
-   #video-pbox2 {
-       display: none;
-   }
-   
      .footer-text {
        font-size: 2.5rem;
    }
@@ -534,24 +532,9 @@ footer {
   
   }
   
-  section { padding: 10rem 3%;
-  
-  }
-  .social-media a {
-      width : 6.5rem;
-       height : 4.5rem;
-       font-size: 4rem;
-        border : none;
-    }
-  
-  .services { 
-      padding: 7rem; 
-  }
-
-  .portfolio {
-
-      padding-bottom: 7rem;
-  }
+.button-container{
+  display: flex;
+}
 
   .contact {
 
@@ -580,145 +563,35 @@ footer {
       overflow-x: hidden;
       }
 
-#menu-icon {
-  
-  display: block;
+  .hideOnMobile{
+    display: none;
   }
 
-  .icon1{
-      display : flex;
-      align-items : center;
-      justify-content : center;
-      padding-left : 85vw;
+  .menu{
+    margin-left: 85vw;
   }
 
+  .slidebar{
+    width: 100%;
+  }
 
-.navbar{
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 1rem 3%;
-  background: var(--bg-color);
-  border-top: .1rem solid rgb(0, 0, 0, .2);
-  box-shadow: 0.5rem, 1rem rgb(0, 0, 0, .2);
-  display: none;
-}
+  img.logo{
+    display: none;
+  }
 
-.navbar.active{
-  display: block;
-}
+  nav.list{
+    display: flex;
+  }
 
-.navbar a {
+  .button-container{
+    display: none;
+  }
 
-  display: block;
-  
-  font-size: 2rem;
-  
-  margin: 3rem 0;
-}
-
-.home {
-
-  flex-direction: column;
-}
-  
-.home-content h3 {
-
-  font-size: 2.6rem;
-}
-  
-.home-content h1 {
-
-   font-size: 5rem;
-}
-
-.home-content {
-  order: 2;
-}
-  
-.home-img img {
-
-  width: 85vw;
-  height : auto;
-  border-radius:50% ;
-  animation:  4s ease-in-out infinite;
-  margin-top: 4rem;
-}
-
-.about {
-
-  flex-direction: column;
-  
-}
-
-.about-img img {
-
-  width: 90vw;
-  
-  margin-top: 4rem;
-}
-
-.services h2{
-  margin-bottom: 3ren;
-}
-
-.portfolio h2 {
-   margin-bottom: 3rem;
-}
-
-.portfolio-box {
-
-  width: 30;
-  height: 60vh;
-  border-radius: 50%;
-  margin-right: 12vw;
-  
-  transition: .5s ease;
-  
-  opacity: 0.7;
-  
-}
-
-.portfolio-container {
-
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.icon{
-  display: flex;
-  cursor: pointer;
-}
-
-.contact form {
-
-  margin-left :1vw;
-}
-
-
-#video-pbox1 {
-  display: none;
-}
-
-#video-pbox2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width : 35%;
-  height: 95%;
-  border-radius: 7%;
-}
-
-.portfolio-layer h4, p, i {
-  display: none;
-  overflow: hidden;
-}
-
-.portfolio-box:hover .portfolio-layer { 
-
-  display: none;
-}
-
+  #hero.hero{
+    width: auto;
+    height: 70vh;
+    background-image: url(family-r-1.jpg);
+  }
 .footer-text {
   
   font-size: 1.5rem;
@@ -740,21 +613,6 @@ footer {
   --bg-color: #1995AD;
 }
 
-.showData{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 55px;
-  background-color : rgba(0, 0, 0, 0.1);
-  width: 98%;
-  height: 50px;
-  text-align: center;
-  padding: 0px;
-  gap: 25px;
-}
-
 }
 
 
@@ -769,47 +627,18 @@ footer {
       overflow-x: hidden;
       }
 
+  .hideOnMobile{
+    display: flex;
+   }
+   
+  .menu{
+    margin-left: 85vw;
+  } 
   .icon1{
       display : flex;
       align-items : center;
       justify-content : center;
       padding-left : 85vw;
-  }
-  .social-media a {
-      border : none;
-      width : 3.5rem;
-      font-size: 1.7rem;
-   }
-
-  .portfolio-container { 
-      grid-template-columns: 1fr;
-  }
-
-  .home-img img {
-      width: 85vw;
-      height : auto;
-      border-radius:50% ;
-      animation:  4s ease-in-out infinite;
-      }
-
-  .about-img img {
-      width: 100vw;
-      margin-top: 4rem;
-  }
-
-  .portfolio-layer h4, p, i {
-      display: none;
-      overflow: hidden;
-  }
-  
-  .portfolio-box:hover .portfolio-layer { 
-  
-      display: none;
-  }
-
-  .icon{
-      display: flex;
-      cursor: pointer;
   }
 
   .contact form {
@@ -817,19 +646,10 @@ footer {
       margin-left :1vw;
 }
 
-  
+.button-container{
+  display: none;
+}
 
-  #video-pbox1 {
-      display: none;
-  }
-
-  #video-pbox2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width : 42%;
-      border-radius: 20%;
-  }
   .footer-text {
   
       font-size: 1.5rem;
@@ -865,6 +685,20 @@ footer {
       font-size: 50%;
       }
 
+  .slidebar{
+    width: 100%;
+  }
+  .hideOnMobile{
+    display: none;
+  }
+  nav.list{
+    display: flex;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .icon1{
       display : flex;
       align-items : center;
@@ -872,53 +706,8 @@ footer {
       padding-left : 85vw;
   }
 
-  .home-img img {
-  width: 85vw;
-  height : auto;
-  border-radius:50% ;
-  animation:  4s ease-in-out infinite;
-  }
-
-  .contact form {
-
-      margin-left :1vw;
-}
-
-  .contact form.input-box input {
-
-      width: 80vw;
-  }
-
-  .portfolio-layer h4, p, i {
-      display: none;
-      overflow: hidden;
-  }
-  
-  .portfolio-box:hover .portfolio-layer { 
-  
-      display: none;
-  }
-
-  .social-media a {
-      border : none;
-      width : 3.5rem;
-      font-size: 2.2rem;
-   }
-  
-  .icon{
-      display: flex;
-      cursor: pointer;
-  }
-
-  #video-pbox1 {
-      display: none;
-  }
-
-  #video-pbox2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width : 40.5%;
+  .button-container{
+    display: none;
   }
 
   .footer-text {
@@ -942,20 +731,6 @@ footer {
       --bg-color: #1995AD;
   }
    
-  .showData{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      position: fixed;
-      background-color : rgba(0, 0, 0, 0.1);
-      top: 55px;
-      width: 98%;
-      height: 50px;
-      text-align: center;
-      padding: 0px;
-      gap: 25px;
-  }
  
 }
 
@@ -969,30 +744,19 @@ footer {
       overflow-x: hidden;
       font-size: 50%;
   }
-
-  .navbar.showData {
-      width : 45rem;
-      height : 3.5rem;
+  .hideOnMobile{
+    display: none;
+  }
+  .menu{
+    margin-right: 70vh;
+  }
+  .slidebar{
+    width: 100%;
+  }
+  .button-container{
+    display: none;
   }
 
-  a.active {
-      font-size : 1.85rem;
-  }
-
-   .social-media a {
-      border : none;
-      width : 2.5rem;
-      height : 1.5rem;
-      font-size: 1.72rem;
-   }
-
-   #video-pbox2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width : 39.5%;
-      border-radius: 20%;
-  }
    .footer-text {
       font-size: 1.2rem;
   }
@@ -1007,29 +771,11 @@ footer {
       overflow-x: hidden;
       font-size: 50%;
   }
-
-  .navbar.showData {
-      width : 40rem;
-      height : 3.5rem;
+  .hideOnMobile{
+    display: none;
   }
-
-  a.active {
-      font-size : 1.6rem;
-  }
-
-   .social-media a {
-      border : none;
-      width : 2.5rem;
-      height : 1.5rem;
-      font-size: 1.72rem;
-   }
-
-   #video-pbox2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width : 39.5%;
-      border-radius: 20%;
+  .slidebar{
+    width: 100%;
   }
    .footer-text {
       font-size: 1.2rem;
@@ -1045,29 +791,14 @@ footer {
       overflow-x: hidden;
       font-size: 50%;
   }
-
-  .navbar.showData {
-      width : 30.0rem;
-      height : 2.5rem;
+  .hideOnMobile{
+    display: none;
   }
-
-  a.active {
-      font-size : 1.0rem;
+  .slidebar{
+    width: 100%;
   }
-
-      .social-media a {
-      border : none;
-      width : 3.5rem;
-      height : 1.5rem;
-      font-size: 1.72rem;
-   }
-  
-     #video-pbox2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width : 55.5%;
-      border-radius: 20%;
+  .button-container{
+    display: none;
   }
 
    .footer-text {
@@ -1078,3 +809,5 @@ footer {
      width : 2.7rem;
   }
 } 
+
+
