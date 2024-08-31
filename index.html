@@ -18,21 +18,29 @@
 
 <body>
   <header>
-   
-    </div>
+    
     <div class="navbar" id="navbar">
-      <img src="PCH.png" alt="img" class="logo">
+
+      <img class="logo" src="PCH.png" alt="logo image">
 
       <nav class="list">
-        <ul>
-          <li><a href="#hero" class="active">homE</a></li>
+        <ul class="slidebar">
+          <li onclick=hideslidebar()><a href="#" class="active"><i class="fa-solid fa-x"></i></a></li>
           <li><a href="#visit" class="active">health / Wellness</a></li>
           <li><a href="#contact" class="active">conTacT</a></li>
           <li><a href="#footer" class="active">helP</a></li>
+          <li><a href="#footer" class="active">log Out</a></li>
+        </ul>
+
+        <ul>
+          <li class="hideOnMobile"><a href="#hero" class="active">homE</a></li>
+          <li class="hideOnMobile"><a href="#visit" class="active">health / Wellness</a></li>
+          <li class="hideOnMobile"><a href="#contact" class="active">conTacT</a></li>
+          <li class="hideOnMobile"><a href="#footer" class="active">helP</a></li>
+          <li class="menu" onclick=showslidebar()><a href="#" class="active"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
         <div class="button-container">
           <button class="logout-btn" id="logout">
-            <i class="fa-solid fa-user" id="logout-icon"></i>
             Log
               Out
           </button>
@@ -46,11 +54,7 @@
    
   <!-- Hero SECTION DESIGN -->
   <section class="hero" id="hero">
-          <h2>
-            <p id="p-1">When</p>
-            <p id="p-2">Health</p>
-            <p id="p-3">Meets happiness</p>
-          </h2>
+    </div>
 </section>
    
     <div class="visit" id="visit">
@@ -87,7 +91,7 @@
     </div>
    </div>
       <div class="marge">
-        <img class="img-v" src="tt.jpeg" alt="medi"> <!--add img-->
+        <img class="img-v" src="TestTube_ Holding and heating chemicals.jpeg" alt="medi"> <!--add img-->
         <div class="box">       
           <h2>health checkup/lab test</h2>
         </div>
