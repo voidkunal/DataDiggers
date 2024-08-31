@@ -515,6 +515,12 @@ footer {
    .footer-iconTop  {
       width : 5.5rem;
    }
+
+   .contact form {     /*add srijit*/
+    max-width: 80vw;
+    margin: auto;
+  } 
+
 }
 
 @media (max-width: 991px) {
@@ -573,6 +579,7 @@ footer {
 
   .slidebar{
     width: 100%;
+    margin-left: 60rem;
   }
 
   img.logo{
@@ -611,6 +618,11 @@ footer {
 
 .footer-iconTop {
   --bg-color: #1995AD;
+}
+
+.contact form {     /*add srijit*/
+  max-width: 80vw;
+  margin: auto;
 }
 
 }
@@ -687,6 +699,7 @@ footer {
 
   .slidebar{
     width: 100%;
+    margin-left: 23rem;
   }
   .hideOnMobile{
     display: none;
@@ -710,6 +723,10 @@ footer {
     display: none;
   }
 
+  .visit {     /*add srijit */
+    margin-left: 5rem;
+  }
+
   .footer-text {
   
       font-size: 1.5rem;
@@ -731,6 +748,10 @@ footer {
       --bg-color: #1995AD;
   }
    
+  .contact form {     /*add srijit*/
+    max-width: 100%;
+    margin: auto;
+  }
  
 }
 
@@ -747,19 +768,32 @@ footer {
   .hideOnMobile{
     display: none;
   }
+
   .menu{
-    margin-right: 70vh;
+    margin-right: 60vh;
   }
+
   .slidebar{
     width: 100%;
+    margin-left: 19rem;
   }
   .button-container{
     display: none;
   }
 
+  .visit {     /*add srijit */
+    margin-left: 3rem;
+  }
+
    .footer-text {
       font-size: 1.2rem;
   }
+
+  .contact form {     /*add srijit*/
+    max-width: 100%;
+    margin: auto;
+  }
+
 } 
 @media (max-width: 330px) {
   html, body{
@@ -776,10 +810,22 @@ footer {
   }
   .slidebar{
     width: 100%;
+    margin-left: 13rem;
   }
+
+.visit {     /*add srijit */
+margin-left: 0%;
+}
+
    .footer-text {
       font-size: 1.2rem;
   }
+
+  .contact form {     /*add srijit*/
+    max-width: 100%;
+    margin: auto;
+  }
+
 } 
 @media (max-width: 250px) {
   html, body{
