@@ -1,19 +1,14 @@
-/**
- Show Data Toggle funtion
- */
+// show toggle
 
-//  let icon = document.querySelector(".icon1");
-// let ul = document.querySelector("navbar a");
-// icon.addEventListener("click", () => {
-//     navbar .classList.toggle("showData");
-//     if (navbar .classList.contains("showData")) {
-//         document.getElementById("bar").className = "fa-solid fa-xmark";
-//     } else {
-//         document.getElementById("bar").className = "fa-solid fa-bars";
-//     }
-// });
+function showslidebar(){
+  const slidebar = document.querySelector('.slidebar')
+  slidebar.style.display ='flex'
+}
 
-
+function hideslidebar() {
+  const slidebar = document.querySelector('.slidebar')
+  slidebar.style.display ='none'
+}
 
 // Select the .hero element and other required elements
 const hero = document.querySelector('.hero');
@@ -90,3 +85,14 @@ function setActiveSlide() {
   slides.forEach((slide) => slide.classList.remove('active'));
   slides[activeSlide].classList.add('active');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const overlayText = document.getElementById('overlayText');
+  
+  // Change the text content
+  overlayText.textContent = 'When Health Meets happiness';
+  
+  // Optionally, you can also dynamically change the z-index or other properties
+  overlayText.style.zIndex = '2'; // This should not affect the whole page if applied correctly
+});
+
