@@ -596,6 +596,7 @@ footer {
     width: 100vw;
     height: 77vh;
     background-image: url(when-r.jpg);
+    padding-top: 20px;
   }
 .footer-text {
   
@@ -662,7 +663,8 @@ footer {
 
 .hero{
   width: 100vw;
-  height: 77vh:
+  height: 77vh;
+  padding-top: 20px;
   background-image: url(when-r.jpg);
 }
   .footer-text {
@@ -726,9 +728,9 @@ footer {
     display: none;
   }
   
-  .hero{
+  #her.hero{
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     background-image: url(when-r.jpg);
   }
   .visit {     /*add srijit */
