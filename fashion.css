@@ -593,8 +593,8 @@ footer {
   }
 
   #hero.hero{
-    width: auto;
-    height: 70vh;
+    width: 100vw;
+    height: 80vh;
     background-image: url(when-r.jpg);
   }
 .footer-text {
@@ -661,8 +661,8 @@ footer {
 }
 
 #hero.hero{
-  width: auto;
-  height: 70vh;
+  width: 100vw;
+  height: 80vh;
   background-image: url(when-r.jpg);
 }
   .footer-text {
@@ -727,7 +727,7 @@ footer {
   }
   
   #hero.hero{
-    width: auto;
+    width: 100vw;
     height: 50vh;
     background-image: url(when-r.jpg);
   }
@@ -790,7 +790,7 @@ footer {
   }
   
   #hero.hero{
-    width: auto;
+    width: 100vw;
     height: 50vh;
     background-image: url(when-r.jpg);
   }
@@ -827,7 +827,7 @@ footer {
   }
   
   #hero.hero{
-    width: auto;
+    width: 100vw;
     height: 50vh;
     background-image: url(when-r.jpg);
   }
@@ -866,7 +866,7 @@ margin-left: 0%;
   }
 
   #hero.hero{
-    width: auto;
+    width: 100vw;
     height: 50vh;
     background-image: url(when-r.jpg);
   }
