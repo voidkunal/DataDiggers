@@ -592,11 +592,9 @@ footer {
     display: none;
   }
 
-  #hero.hero{
+  .hero{
     width: 100vw;
-    height: 80vh;
-    margin-top : 30px;
-    padding-top : 30px;
+    height: 77vh;
     background-image: url(when-r.jpg);
   }
 .footer-text {
@@ -662,11 +660,9 @@ footer {
   display: none;
 }
 
-#hero.hero{
+.hero{
   width: 100vw;
-  height: 80vh;
-  margin-top : 20px;
-  padding-top : 20px;
+  height: 77vh:
   background-image: url(when-r.jpg);
 }
   .footer-text {
@@ -730,7 +726,7 @@ footer {
     display: none;
   }
   
-  #hero.hero{
+  .hero{
     width: 100vw;
     height: 50vh;
     background-image: url(when-r.jpg);
