@@ -595,6 +595,8 @@ footer {
   #hero.hero{
     width: 100vw;
     height: 80vh;
+    margin-top : 30px;
+    padding-top : 30px;
     background-image: url(when-r.jpg);
   }
 .footer-text {
@@ -663,6 +665,8 @@ footer {
 #hero.hero{
   width: 100vw;
   height: 80vh;
+  margin-top : 20px;
+  padding-top : 20px;
   background-image: url(when-r.jpg);
 }
   .footer-text {
