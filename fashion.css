@@ -38,7 +38,6 @@ body {
     background: var(--bg-color); color: var(--text-color);
     
 }
-
 .navbar {
 color:var(--text-color);
 display: flex;
@@ -232,7 +231,7 @@ ul {
   height: 120vh;
   overflow: hidden; 
   background: var(--snd-bg-color);
-  background-image: url(family1.jpg);
+  background-image: url(When.jpg);
   background-size: cover;
   background-position: center;
   position: flex;
@@ -596,7 +595,7 @@ footer {
   #hero.hero{
     width: auto;
     height: 70vh;
-    background-image: url(family-r-1.jpg);
+    background-image: url(when-r.jpg);
   }
 .footer-text {
   
@@ -661,6 +660,11 @@ footer {
   display: none;
 }
 
+#hero.hero{
+  width: auto;
+  height: 70vh;
+  background-image: url(when-r.jpg);
+}
   .footer-text {
   
       font-size: 1.5rem;
@@ -721,7 +725,12 @@ footer {
   .button-container{
     display: none;
   }
-
+  
+  #hero.hero{
+    width: auto;
+    height: 50vh;
+    background-image: url(when-r.jpg);
+  }
   .visit {     /*add srijit */
     margin-left: 5rem;
   }
@@ -779,7 +788,12 @@ footer {
   .button-container{
     display: none;
   }
-
+  
+  #hero.hero{
+    width: auto;
+    height: 50vh;
+    background-image: url(when-r.jpg);
+  }
   .visit {     /*add srijit */
     margin-left: 3rem;
   }
@@ -811,7 +825,12 @@ footer {
     width: 100%;
     margin-left: 13rem;
   }
-
+  
+  #hero.hero{
+    width: auto;
+    height: 50vh;
+    background-image: url(when-r.jpg);
+  }
 .visit {     /*add srijit */
 margin-left: 0%;
 }
@@ -844,6 +863,12 @@ margin-left: 0%;
   }
   .button-container{
     display: none;
+  }
+
+  #hero.hero{
+    width: auto;
+    height: 50vh;
+    background-image: url(when-r.jpg);
   }
 
    .footer-text {
